@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,6 +15,22 @@ namespace gitProj
         public MainPage()
         {
             InitializeComponent();
+            Load();
+
+           
         }
+        private void Load()
+        {
+            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BNIResult.json");
+
+            if (File.Exists(path))
+            {
+                var file = File.ReadAllText(path);
+                List<BNIResult> list = JsonConvert.DeserializeObject<List<BNIResult>>(file);
+
+                listView.ItemsSource = list;
+            }
+        }
+
     }
 }
