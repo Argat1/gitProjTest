@@ -17,11 +17,23 @@ namespace gitProj
             InitializeComponent();
             Load();
 
-           
+            /*BNIResult p = new BNIResult(3,"dziala3",DateTime.Now,180,50,"git");
+            
+
+            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BNIResult2.json");
+
+            
+
+            List<BNIResult> list = new List<BNIResult>();
+
+            list.Add(p);
+
+            string d = JsonConvert.SerializeObject(list);
+            File.WriteAllText(path, d);*/
         }
         private void Load()
         {
-            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BNIResult.json");
+            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BNIResult2.json");
 
             if (File.Exists(path))
             {
