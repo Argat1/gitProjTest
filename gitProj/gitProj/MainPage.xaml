@@ -4,7 +4,7 @@
              x:Class="gitProj.MainPage">
 
     <StackLayout BackgroundColor="Gray">
-        <ListView x:Name="listView" SelectionMode="Single">
+        <ListView x:Name="listView" SelectionMode="Single" RowHeight="150">
             <ListView.Header>
                 <Grid>
                     <Grid.ColumnDefinitions>
