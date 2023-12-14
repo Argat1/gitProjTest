@@ -9,40 +9,49 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
+                        <!--<ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>-->
                     </Grid.ColumnDefinitions>
                     <Label Grid.Column="0">Title</Label>
-                    <Label Grid.Column="1">Date</Label>
+                    <!--<Label Grid.Column="1">Date</Label>
                     <Label Grid.Column="2">Height</Label>
                     <Label Grid.Column="3">With</Label>
-                    <Label Grid.Column="4">Result</Label>
+                    <Label Grid.Column="4">Result</Label>-->
                 </Grid>
             </ListView.Header>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid>
+                        <!--<Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
-                                
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>-->
+                                <!--<ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Text="{Binding Title}" Padding="10"></Label>
-                            <Label Grid.Column="1" Text="{Binding Date}" Padding="10"></Label>
-                            <Label Grid.Column="2" Text="{Binding Height}" Padding="10"></Label>
-                            <Label Grid.Column="3" Text="{Binding Width}" Padding="10"></Label>
-                            <Label Grid.Column="4" Text="{Binding Result}" Padding="10"></Label>
-                        </Grid>
-
+                                <ColumnDefinition Width="*"/>-->
+                            <!--</Grid.ColumnDefinitions>
+                            <Label Grid.Row="0" Text="{Binding Title}" Padding="10"></Label>
+                            <Label Grid.Row="1" Text="{Binding Date}" Padding="10"></Label>
+                            <Label Grid.Row="2" Text="{Binding Height}" Padding="10"></Label>
+                            <Label Grid.Row="3" Text="{Binding Width}" Padding="10"></Label>
+                            <Label Grid.Row="4" Text="{Binding Result}" Padding="10"></Label>
+                        </Grid>-->
+                        <StackLayout>
+                            <Label  Text="{Binding Title}"></Label>
+                            <Label  Text="{Binding Date}"></Label>
+                            <Label  Text="{Binding Height}"></Label>
+                            <Label  Text="{Binding Width}"></Label>
+                            <Label  Text="{Binding Result}"></Label>
+                        </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

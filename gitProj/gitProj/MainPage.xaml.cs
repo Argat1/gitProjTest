@@ -20,7 +20,7 @@ namespace gitProj
             /*BNIResult p = new BNIResult(3,"dziala3",DateTime.Now,180,50,"git");
             
 
-            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BNIResult2.json");
+            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BNIResult3.json");
 
             
 
@@ -33,7 +33,7 @@ namespace gitProj
         }
         private void Load()
         {
-            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BNIResult2.json");
+            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BNIResult3.json");
 
             if (File.Exists(path))
             {
